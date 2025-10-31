@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   langBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const base = path.includes('/assets/topicos/') ? './' : './';
+    const base = path.includes('/assets/topicos/') ? '/' : '/';
     window.location.href = base + target;
   });
 });
@@ -242,5 +242,6 @@ document.addEventListener('DOMContentLoaded', () => {
     applyFontScale();
   }, 400);
 });
+
 
 
